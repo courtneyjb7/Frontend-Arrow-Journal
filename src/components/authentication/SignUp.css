@@ -1,0 +1,29 @@
+.SignUp {
+  text-align: center;
+  background-color: white;
+}
+
+.SignUp-header {
+  min-height: 77vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  font-size: calc(10px + 2vmin);
+}
+
+.SignUp-logo {
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+}
+
+.SignUp-title {
+  min-height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top-center;
+  font-size: calc(50px + 2vmin);
+  color: black;
+}
