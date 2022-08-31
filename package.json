@@ -29,14 +29,13 @@
     "start": "^5.1.0",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "http://courtneyjb7.github.io/Frontend-Arrow-Journal",
-  "main": "index.js",
+  "homepage": "https://courtneyjb7.github.io/Frontend-Arrow-Journal",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "prettier --check ./src",
+    "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
