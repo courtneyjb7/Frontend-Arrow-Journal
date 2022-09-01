@@ -53,16 +53,16 @@ function JournalEntry(props) {
 
             <AlertDialogContent>
               <AlertDialogHeader>
-                Done Journaling? Save Before Exiting
+                Done Journaling? Select a Mood and Save Before Exiting!
               </AlertDialogHeader>
               <AlertDialogCloseButton />
 
               <AlertDialogFooter>
                 <Button ref={cancelRef} onClick={onClose}>
-                  No
+                  Cancel
                 </Button>
-                <Button colorScheme="red" ml={3} onClick={() => makePostCall()}>
-                  Yes
+                <Button colorScheme="blue" ml={3} onClick={() => makePostCall()}>
+                  Save
                 </Button>
               </AlertDialogFooter>
             </AlertDialogContent>

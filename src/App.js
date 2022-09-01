@@ -19,12 +19,7 @@ function App() {
             <Route path="/daily" element={<Daily />} />
             <Route path="/sign-up" element={<SignUp />} />
             <Route path="/login" element={<Login />} />
-            <Route
-              path="/profile"
-              element={
-                <Profile name="BJ Klingenberg" email="bklingen@calpoly.edu" />
-              }
-            />
+            <Route path="/profile" element={<Profile />} />
           </Routes>
         </Router>
       </Box>
