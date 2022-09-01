@@ -22,11 +22,12 @@ import {
   Tbody,
   useEditableControls,
   EditableTextarea,
-  Image,
+  // Image,
 } from "@chakra-ui/react";
 import fire from "../../fire.js";
 import { CheckIcon, EditIcon, DeleteIcon } from "@chakra-ui/icons";
 import { Avatar, AvatarGroup } from "@chakra-ui/react";
+import logo from "../../Arrow.png";
 
 function Monthly() {
   const [dumps, setDumps] = useState([]);
@@ -122,7 +123,8 @@ function Monthly() {
 
   return (
     <VStack className="monthly">
-      <Image className="logo" src="Arrow.png" alt="Arrow Journal" />
+      {/* <Image className="logo" src="Arrow.png" alt="Arrow Journal" /> */}
+      <img src={logo} alt="Arrow Journal" className="SignUp-logo" />
       <WelcomeMessage className="welcome" />
       <HStack className="body">
         <MonthlyCalendar />

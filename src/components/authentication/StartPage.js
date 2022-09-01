@@ -1,6 +1,7 @@
 import React from "react";
-import { Box, Button, Stack, Text, Image } from "@chakra-ui/react";
+import { Box, Button, Stack, Text} from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
+import logo from "../../Arrow.png";
 
 function StartPage() {
   let navigate = useNavigate();
@@ -20,7 +21,8 @@ function StartPage() {
           <Text fontSize="5xl" color="black">
             Welcome To
           </Text>
-          <Image src="Arrow.png" alt="Arrow Journal" />
+          {/* <Image src="Arrow.png" alt="Arrow Journal" /> */}
+          <img src={logo} alt="Arrow Journal" className="SignUp-logo" />
           <Text fontSize="5xl" color="black">
             Journal!
           </Text>

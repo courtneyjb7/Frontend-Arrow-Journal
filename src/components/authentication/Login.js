@@ -70,7 +70,7 @@ function Login() {
   return (
     <ChakraProvider>
       <div className="SignUp">
-        <img src={logo} alt="Arrow" className="SignUp-logo" />
+        <img src={logo} alt="Arrow Journal" className="SignUp-logo" />
         <header className="SignUp-header">
           <p className="SignUp-title">Login</p>
           <Stack spacing={8} direction="column">
