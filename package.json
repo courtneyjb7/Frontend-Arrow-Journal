@@ -62,20 +62,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
-      "prettier --write"
-    ]
-  },
-  "devDependencies": {
-    "gh-pages": "^4.0.0",
-    "prettier": "2.6.2",
-    "react-router-dom": "^6.3.0"
   }
 }
