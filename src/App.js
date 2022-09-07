@@ -14,7 +14,7 @@ function App() {
       <Box>
         <Router>
           <Routes>
-            <Route exact path="/" element={<StartPage />} />
+            <Route exact path="/Frontend-Arrow-Journal" element={<StartPage />} />
             <Route path="/monthly" element={<Monthly />} />
             <Route path="/daily" element={<Daily />} />
             <Route path="/sign-up" element={<SignUp />} />
