@@ -136,7 +136,7 @@ function PasswordInput(props) {
           htmlSize={50}
           width="auto"
           bg="white"
-          type={show ? "text" : "password"}
+          type={show ? "text" :  "password"}
           onChange={(e) => props.setPw(e.target.value)}
           value={props.pw}
         />
