@@ -63,7 +63,7 @@ function Monthly() {
   async function makePostCall(dump, email) {
     try {
       const response = await axios.post(
-        process.env.BACKEND_URL+`/dumps/${email}`,
+        process.env.REACT_APP_BACKEND_URL+`/dumps/${email}`,
         dump
       );
       return response;
@@ -76,7 +76,7 @@ function Monthly() {
   async function makePutCall(dump, dumpToUpdate) {
     try {
       const response = await axios.put(
-        process.env.BACKEND_URL+`/dumps/${email}/${dump._id}`,
+        process.env.REACT_APP_BACKEND_URL+`/dumps/${email}/${dump._id}`,
         dumpToUpdate
       );
       return response;
@@ -89,7 +89,7 @@ function Monthly() {
   async function makeDeleteCall(dumpId) {
     try {
       const response = await axios.delete(
-        process.env.BACKEND_URL+`/dumps/${email}/${dumpId}`
+        process.env.REACT_APP_BACKEND_URL+`/dumps/${email}/${dumpId}`
       );
       return response;
     } catch (error) {
@@ -108,7 +108,7 @@ function Monthly() {
 
   async function fetchAll() {
     try {
-      const response = await axios.get(process.env.BACKEND_URL+`/dumps/${email}`);
+      const response = await axios.get(process.env.REACT_APP_BACKEND_URL+`/dumps/${email}`);
       return response.data;
     } catch (error) {
       console.log(error);
@@ -204,7 +204,7 @@ function MonthlyCalendar() {
   async function fetchAll() {
     try {
       const response = await axios.get(
-        process.env.BACKEND_URL+`/entry/${state.email}`
+        process.env.REACT_APP_BACKEND_URL+`/entry/${state.email}`
       );
       return response.data;
     } catch (error) {

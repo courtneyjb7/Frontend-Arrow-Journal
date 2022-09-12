@@ -57,7 +57,7 @@ function Daily(props) {
       const type = "Personal";
 
       const response = await axios.get(
-        process.env.BACKEND_URL+`/entry/${email}/${dateStr}/${type}`
+        process.env.REACT_APP_BACKEND_URL+`/entry/${email}/${dateStr}/${type}`
       );
       return response;
     } catch (error) {
