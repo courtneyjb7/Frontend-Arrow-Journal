@@ -78,7 +78,7 @@ function SignUp() {
 
   async function createUser(user) {
     try {
-      const response = await axios.post("http://localhost:5000/users", user);
+      const response = await axios.post(process.env.BACKEND_URL, user);
       return response;
     } catch (error) {
       console.log(error);
@@ -87,7 +87,7 @@ function SignUp() {
   }
 
   function back() {
-    navigate("/");
+    navigate("/Frontend-Arrow-Journal");
   }
 
   return (

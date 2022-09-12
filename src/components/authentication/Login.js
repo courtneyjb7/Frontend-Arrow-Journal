@@ -22,6 +22,7 @@ function Login() {
   const [emailEmpty, setEmailEmpty] = useState(false);
   const [formatErrorMessage, setformatErrorMessage] = useState("");
   let navigate = useNavigate();
+  // console.log(process.env.REACT_APP_SERVER_URL)
 
   function submit() {
     // console.log(`Submitted: ${name}, ${email}, ${pw}`);
@@ -64,7 +65,7 @@ function Login() {
   }
 
   function back() {
-    navigate("/");
+    navigate("/Frontend-Arrow-Journal");
   }
 
   return (

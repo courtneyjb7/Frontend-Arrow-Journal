@@ -30,6 +30,7 @@ import { Avatar, AvatarGroup } from "@chakra-ui/react";
 import logo from "../../Arrow.png";
 
 function Monthly() {
+
   const [dumps, setDumps] = useState([]);
 
   function checkUser() {
@@ -62,7 +63,7 @@ function Monthly() {
   async function makePostCall(dump, email) {
     try {
       const response = await axios.post(
-        `http://localhost:5000/dumps/${email}`,
+        process.env.BACKEND_URL+`/dumps/${email}`,
         dump
       );
       return response;
@@ -75,7 +76,7 @@ function Monthly() {
   async function makePutCall(dump, dumpToUpdate) {
     try {
       const response = await axios.put(
-        `http://localhost:5000/dumps/${email}/${dump._id}`,
+        process.env.BACKEND_URL+`/dumps/${email}/${dump._id}`,
         dumpToUpdate
       );
       return response;
@@ -88,7 +89,7 @@ function Monthly() {
   async function makeDeleteCall(dumpId) {
     try {
       const response = await axios.delete(
-        `http://localhost:5000/dumps/${email}/${dumpId}`
+        process.env.BACKEND_URL+`/dumps/${email}/${dumpId}`
       );
       return response;
     } catch (error) {
@@ -107,7 +108,7 @@ function Monthly() {
 
   async function fetchAll() {
     try {
-      const response = await axios.get(`http://localhost:5000/dumps/${email}`);
+      const response = await axios.get(process.env.BACKEND_URL+`/dumps/${email}`);
       return response.data;
     } catch (error) {
       console.log(error);
@@ -203,7 +204,7 @@ function MonthlyCalendar() {
   async function fetchAll() {
     try {
       const response = await axios.get(
-        `http://localhost:5000/entry/${state.email}`
+        process.env.BACKEND_URL+`/entry/${state.email}`
       );
       return response.data;
     } catch (error) {

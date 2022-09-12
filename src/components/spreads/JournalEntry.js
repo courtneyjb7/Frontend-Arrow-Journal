@@ -92,7 +92,7 @@ function JournalEntry(props) {
         random_answer: props.entry.PersonalPrompt4,
       };
       const response = await axios.post(
-        `http://localhost:5000/entry/${props.email}`,
+        process.env.BACKEND_URL+`/entry/${props.email}`,
         sumbitEntry
       );
       console.log(response);
