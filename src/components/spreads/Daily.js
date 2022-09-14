@@ -56,7 +56,7 @@ function Daily(props) {
         month + "-" + fullDate.getDate() + "-" + fullDate.getFullYear();
       const type = "Personal";
 
-      const response = await axios.get( 
+      const response = await axios.get(
         process.env.REACT_APP_BACKEND_URL +`/entry/${email}/${dateStr}/${type}`
       );
       return response;

@@ -7,7 +7,7 @@ import StartPage from "./components/authentication/StartPage.js";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Monthly from "./components/spreads/Monthly";
 import Daily from "./components/spreads/Daily";
-
+ 
 function App() {
   return (
     <ChakraProvider>

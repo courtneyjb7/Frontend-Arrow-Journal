@@ -78,7 +78,7 @@ function SignUp() {
 
   async function createUser(user) {
     try {
-      const response = await axios.post(process.env.REACT_APP_BACKEND_URL, user );
+      const response = await axios.post(process.env.REACT_APP_BACKEND_URL, user);
       return response;
     } catch (error) {
       console.log(error);
