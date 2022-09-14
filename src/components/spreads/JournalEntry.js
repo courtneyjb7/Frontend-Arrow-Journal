@@ -91,7 +91,7 @@ function JournalEntry(props) {
         goals_response: props.entry.PersonalPrompt3,
         random_answer: props.entry.PersonalPrompt4,
       };
-      const response = await axios.post(
+      const response = await axios.post( 
         process.env.REACT_APP_BACKEND_URL+`/entry/${props.email}`,
         sumbitEntry
       );
