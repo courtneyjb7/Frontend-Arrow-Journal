@@ -7,11 +7,11 @@ function StartPage() {
   let navigate = useNavigate();
 
   function navigateToLogin() {
-    navigate("/login");
+    navigate("/Frontend-Arrow-Journal/login");
   }
 
   function navigateToSignUp() {
-    navigate("/sign-up");
+    navigate("/Frontend-Arrow-Journal/sign-up");
   }
 
   return (

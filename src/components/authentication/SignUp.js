@@ -65,7 +65,7 @@ function SignUp() {
           var userInfo = { name: name, email: email };
           createUser(userInfo);
 
-          navigate(`/monthly`, { state: userInfo });
+          navigate(`/Frontend-Arrow-Journal/monthly`, { state: userInfo });
         })
         .catch(function (error) {
           var errorCode = error.code;
