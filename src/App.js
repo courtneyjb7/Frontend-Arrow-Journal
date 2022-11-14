@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Monthly from "./components/spreads/Monthly";
 import Daily from "./components/spreads/Daily";
  
-function App() { 
+function App() {
   return (
     <ChakraProvider>
       <Box>
