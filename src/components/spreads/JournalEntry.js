@@ -53,7 +53,7 @@ function JournalEntry(props) {
 
             <AlertDialogContent>
               <AlertDialogHeader>
-                Done Journaling? Select a Mood and Save Before Exiting!
+                Done Journaling? Save Before Exiting
               </AlertDialogHeader>
               <AlertDialogCloseButton />
 
@@ -96,7 +96,7 @@ function JournalEntry(props) {
         sumbitEntry
       );
       console.log(response);
-      navigate("/monthly", { state: { name: props.name, email: props.email } });
+      navigate("/Frontend-Arrow-Journal/monthly", { state: { name: props.name, email: props.email } });
     } catch (error) {
       console.log(error);
       return false;

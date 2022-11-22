@@ -326,11 +326,11 @@ function BrainDump(props) {
           {...getEditButtonProps()}
           aria-label="edit dump"
         />
-        <IconButton
+        {/* <IconButton
           icon={<DeleteIcon />}
           onClick={() => props.removeDump(props.index)}
           aria-label="delete dump"
-        />
+        /> */}
       </ButtonGroup>
     );
   }
