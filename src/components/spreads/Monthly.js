@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate, useLocation } from "react-router-dom";
+import { useNavigate, useLocation} from "react-router-dom";
 import Calendar from "react-calendar";
 import "./Monthly.css";
 import axios from "axios";
@@ -28,17 +28,31 @@ import fire from "../../fire.js";
 import { CheckIcon, EditIcon } from "@chakra-ui/icons";//DeleteIcon
 import { Avatar, AvatarGroup } from "@chakra-ui/react";
 import logo from "../../Arrow.png";
+// import StartPage from "../authentication/StartPage.js";
 
 function Monthly() {
-
   const [dumps, setDumps] = useState([]);
+  // let navigate = useNavigate();
+  const { state } = useLocation();
 
   function checkUser() {
-    const user = fire.auth().currentUser;
-    return user.email;
+    // const user = fire.auth().currentUser;    
+    // if(user == null){
+    //   // navigate("/Frontend-Arrow-Journal");
+    //   // Refresh();
+    //   return null;
+    // }
+    // else{
+    //   return user.email;
+    // }
+    // return user;
+    return state.email;
   }
 
-  const email = checkUser();
+
+  // const user = checkUser();
+  const email = checkUser();  
+
 
   function editOneDump(index, dumpToUpdate) {
     const updatedDump = makePutCall(dumps[index], dumpToUpdate);
@@ -120,6 +134,7 @@ function Monthly() {
     fetchAll().then((result) => {
       if (result) setDumps(result);
     });
+    
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
@@ -145,7 +160,7 @@ function Monthly() {
 function WelcomeMessage() {
   var today = new Date();
   const { state } = useLocation();
-  const navigate = useNavigate();
+  const navigate = useNavigate();  
 
   let days = {
     0: "Sunday",
