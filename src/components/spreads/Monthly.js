@@ -25,7 +25,7 @@ import {
   // Image,
 } from "@chakra-ui/react";
 import fire from "../../fire.js";
-import { CheckIcon, EditIcon, DeleteIcon } from "@chakra-ui/icons";
+import { CheckIcon, EditIcon } from "@chakra-ui/icons";//DeleteIcon
 import { Avatar, AvatarGroup } from "@chakra-ui/react";
 import logo from "../../Arrow.png";
 
