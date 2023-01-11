@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Frontend-Arrow-Journal/static/css/main.bdc3ef4f.css",
-    "main.js": "/Frontend-Arrow-Journal/static/js/main.aed3342a.js",
+    "main.js": "/Frontend-Arrow-Journal/static/js/main.e0ba841e.js",
     "static/media/Arrow.png": "/Frontend-Arrow-Journal/static/media/Arrow.c7f0051107a42b26e861.png",
     "index.html": "/Frontend-Arrow-Journal/index.html",
     "main.bdc3ef4f.css.map": "/Frontend-Arrow-Journal/static/css/main.bdc3ef4f.css.map",
-    "main.aed3342a.js.map": "/Frontend-Arrow-Journal/static/js/main.aed3342a.js.map"
+    "main.e0ba841e.js.map": "/Frontend-Arrow-Journal/static/js/main.e0ba841e.js.map"
   },
   "entrypoints": [
     "static/css/main.bdc3ef4f.css",
-    "static/js/main.aed3342a.js"
+    "static/js/main.e0ba841e.js"
   ]
 }
