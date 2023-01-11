@@ -96,7 +96,7 @@ function JournalEntry(props) {
         sumbitEntry
       );
       console.log(response);
-      navigate("#/Frontend-Arrow-Journal/monthly", { state: { name: props.name, email: props.email } });
+      navigate("/Frontend-Arrow-Journal/monthly", { state: { name: props.name, email: props.email } });
     } catch (error) {
       console.log(error);
       return false;
