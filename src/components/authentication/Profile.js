@@ -11,7 +11,7 @@ function Profile(props) {
   let navigate = useNavigate();
 
   function back() {
-    navigate("/Frontend-Arrow-Journal/monthly", { state: state });
+    navigate("/monthly", { state: state });
   }
   return (
     <ChakraProvider>

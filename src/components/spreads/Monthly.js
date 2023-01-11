@@ -38,7 +38,7 @@ function Monthly() {
   function checkUser() {
     // const user = fire.auth().currentUser;    
     // if(user == null){
-    //   // navigate("/Frontend-Arrow-Journal");
+    //   // navigate("/");
     //   // Refresh();
     //   return null;
     // }
@@ -188,7 +188,7 @@ function WelcomeMessage() {
   };
 
   function goToProfile() {
-    navigate("/Frontend-Arrow-Journal/profile", { state: state });
+    navigate("/profile", { state: state });
   }
   const first = state.name.split(" ")[0];
   return (
@@ -211,7 +211,7 @@ function MonthlyCalendar() {
   const [entries, setEntries] = useState([]);
 
   function routeToDaily(props) {
-    navigate("/Frontend-Arrow-Journal/daily", {
+    navigate("/daily", {
       state: { date: props, email: state.email, name: state.name },
     });
   }

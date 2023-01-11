@@ -12,14 +12,14 @@ function App() {
   return (
     <ChakraProvider>
       <Box>
-        <Router>
+        <Router basename="/Frontend-Arrow-Journal">
           <Routes>
-            <Route exact path="/Frontend-Arrow-Journal" element={<StartPage />} />
-            <Route path="/Frontend-Arrow-Journal/monthly" element={<Monthly />} />
-            <Route path="/Frontend-Arrow-Journal/daily" element={<Daily />} />
-            <Route path="/Frontend-Arrow-Journal/sign-up" element={<SignUp />} />
-            <Route path="/Frontend-Arrow-Journal/login" element={<Login />} />
-            <Route path="/Frontend-Arrow-Journal/profile" element={<Profile />} />
+            <Route exact path="/" element={<StartPage />} />
+            <Route path="/monthly" element={<Monthly />} />
+            <Route path="/daily" element={<Daily />} />
+            <Route path="/sign-up" element={<SignUp />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/profile" element={<Profile />} />
           </Routes>
         </Router>
       </Box>
