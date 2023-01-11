@@ -53,7 +53,7 @@ function Login() {
             name: user.user._delegate.displayName,
             email: user.user._delegate.email,
           };
-          navigate("/Frontend-Arrow-Journal/monthly", { state: userInfo }); //successful login here!!
+          navigate("#/Frontend-Arrow-Journal/monthly", { state: userInfo }); //successful login here!!
         })
         .catch(function (error) {
           var errorCode = error.code;
@@ -65,7 +65,7 @@ function Login() {
   }
 
   function back() {
-    navigate("/Frontend-Arrow-Journal");
+    navigate("#/Frontend-Arrow-Journal");
   }
 
   return (

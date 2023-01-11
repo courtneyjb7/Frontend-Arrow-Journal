@@ -87,7 +87,7 @@ function SignUp() {
   }
 
   function back() {
-    navigate("/Frontend-Arrow-Journal");
+    navigate("#/Frontend-Arrow-Journal");
   }
 
   return (
