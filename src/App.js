@@ -12,7 +12,7 @@ function App() {
   return (
     <ChakraProvider>
       <Box>
-        <Router basename="/Frontend-Arrow-Journal">
+        <Router>
           <Routes>
             <Route exact path="/Frontend-Arrow-Journal" element={<StartPage />} />
             <Route path="/Frontend-Arrow-Journal/monthly" element={<Monthly />} />
