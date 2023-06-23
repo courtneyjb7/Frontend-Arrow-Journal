@@ -1,4 +1,5 @@
 Link: https://courtneyjb7.github.io/Frontend-Arrow-Journal/
+
 Note: There is a bug when the page is refreshed. 
 
 # Getting Started with Create React App
