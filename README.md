@@ -1,3 +1,6 @@
+Link: https://courtneyjb7.github.io/Frontend-Arrow-Journal/
+Note: There is a bug when the page is refreshed. 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
